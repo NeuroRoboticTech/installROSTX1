@@ -15,7 +15,7 @@ sudo apt-get update
 sudo apt-get install ros-kinetic-ros-base -y
 
 # Add Individual Packages here
-sudo apt-get install ros-kinetic-desktop-full -y
+#sudo apt-get install ros-kinetic-desktop-full -y
 
 sudo apt-get install ros-kinetic-ar-track-alvar-msgs \
   ros-kinetic-collada-urdf ros-kinetic-perception \
@@ -23,11 +23,15 @@ sudo apt-get install ros-kinetic-ar-track-alvar-msgs \
   ros-kinetic-xacro -y
 
 sudo apt-get install ros-kinetic-ros-control \
-  ros-kinetic-gazebo-ros-control ros-kinetic-joint-state-controller \
-  ros-kinetic-effort-controllers ros-kinetic-joint-trajectory-controller \
-  ros-kinetic-moveit* ros-kinetic-octomap* ros-kinetic-object-recognition-* \
-  ros-kinetic-ros-tutorials
+  ros-kinetic-joint-state-controller \
+  ros-kinetic-effort-controllers \
+  ros-kinetic-joint-trajectory-controller \
+  ros-kinetic-moveit* ros-kinetic-octomap* \
+  ros-kinetic-object-recognition-* \
+  ros-kinetic-ros-tutorials -y
 
+#Tries to install gazebo. Keep commented out for now.
+#sudo apt-get install ros-kinetic-gazebo-ros-control
 
 # Initialize rosdep
 sudo apt-get install python-rosdep -y
