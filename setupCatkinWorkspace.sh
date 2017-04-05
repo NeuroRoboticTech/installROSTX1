@@ -6,7 +6,7 @@ source /opt/ros/kinetic/setup.bash
 DEFAULTDIR=~/catkin_ws
 CLDIR="$1"
 if [ ! -z "$CLDIR" ]; then 
- DEFAULTDIR=~/"$CLDIR"
+ DEFAULTDIR="$CLDIR"
 fi
 if [ -e "$DEFAULTDIR" ] ; then
   echo "$DEFAULTDIR already exists; no action taken" 
