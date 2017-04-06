@@ -23,12 +23,15 @@ sudo apt-get install ros-kinetic-ar-track-alvar-msgs \
   ros-kinetic-xacro -y
 
 sudo apt-get install ros-kinetic-ros-control \
+  ros-kinetic-gazebo-ros-control \
   ros-kinetic-joint-state-controller \
   ros-kinetic-effort-controllers \
   ros-kinetic-joint-trajectory-controller \
   ros-kinetic-moveit* ros-kinetic-octomap* \
   ros-kinetic-object-recognition-* \
-  ros-kinetic-ros-tutorials -y
+  ros-kinetic-ros-tutorials \
+  ros-kinetic-diagnostic-updater -y
+
 
 #Tries to install gazebo. Keep commented out for now.
 #sudo apt-get install ros-kinetic-gazebo-ros-control
